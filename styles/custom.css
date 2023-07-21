@@ -1,0 +1,27 @@
+/* custom.css */
+@import "tailwindcss/resolveConfig";
+
+@variants responsive;
+
+@layer utilities {
+  .right-scrollbar-width {
+    right: var(--scrollbar-width);
+  }
+
+  .offset-desktop {
+    margin-left: var(--offset-desktop);
+  }
+
+  .offset-mobile {
+    margin-left: var(--offset-mobile);
+  }
+
+  .font-primary {
+    font-family: var(--font-primary);
+  }
+
+  .swiper-theme-color {
+    --swiper-theme-color: theme('colors.blue.500');
+    color: var(--swiper-theme-color);
+  }
+}
