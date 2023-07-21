@@ -18,7 +18,7 @@ function Header() {
               href="https://www.producthunt.com/products/anytype"
               target="_blank"
               rel="nofollow"
-              className="flex text-14-400 items-center mr-5 text-red-500"
+              className="flex font-Inter text-[14px] items-center mr-5 text-red-500"
             >
               {/*[*/} Join us for our Product Hunt launch on July 19!{" "}
               <span
