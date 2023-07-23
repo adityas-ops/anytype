@@ -1,4 +1,8 @@
 import Card from "@/components/Card";
+import Gallary from "@/components/Gallary";
+import Kanban from "@/components/Kanban";
+import Table from "@/components/Table";
+import { useState } from "react";
 
 const data = [
   {
@@ -87,6 +91,8 @@ const cardData2 = [
 ];
 
 export default function Home() {
+  const [activeBut, setActiveBut] = useState("table");
+  const [compo,setCompo] =  useState(1)
   return (
     <>
       <section className="w-full mt-[80px] bg-white z-0 relative overflow-hidden bg-gradient-1">
@@ -414,14 +420,11 @@ export default function Home() {
                 </span>
               </h4>
             </div>
-            <div className="pt-[28px] pb-[48px] sm:pt-[40px] sm:pb-[62px] px-[32px] border-[1px] border-t-0 sm:border-r-0 md:border-t  border-gray-800 md:order-0">
-              <h4
-                data-v-dbbcdee0=""
-                className=" text-[18px]   sm:text-[22px] font-[500]  text-center "
-              >
+            <div className="pt-[28px]  pb-[48px] sm:pt-[40px] sm:pb-[62px] px-[32px] border-[1px] border-t-0 border-b-0 sm:border-r-0 md:border-t  border-gray-800 md:order-0">
+              <h4 className=" text-[18px]   sm:text-[22px] font-[500]  text-center ">
                 {/**/}Block-based editor
               </h4>
-              <div data-v-dbbcdee0="" className=" mx-auto max-w-[336px] ">
+              <div className=" mx-auto max-w-[336px] ">
                 {/**/}
                 <img
                   src="/images/home/editor.svg"
@@ -430,7 +433,7 @@ export default function Home() {
               </div>
             </div>
             {/* start */}
-            <div className="pt-[28px] pb-[48px] sm:pt-[40px] sm:pb-[62px] px-[32px] border border-t-0 md:border-r-0 border-gray-800 md:order-2">
+            <div className="pt-[28px] pb-[48px] sm:pt-[40px] sm:pb-[62px] px-[32px] border  md:border-r-0 border-gray-800 md:order-2">
               <h4 className=" text-[18px] font[-500] sm:text-[22px] text-center ">
                 {/**/}Data-bases
               </h4>
@@ -618,6 +621,77 @@ export default function Home() {
             </div>
 
             {/* end */}
+          </div>
+        </div>
+      </section>
+      <section className="bg-black text-white  pb-[92px]">
+        <div className="containers">
+          <div className="border border-t-0 border-gray-800 pt-[42px] md:pt-[124px] pb-[48px] sm:pb-[108px] px-[32px]">
+            <h3
+              data-v-dbbcdee0=""
+              className=" text-[28px] leading-[1] font-[500] sm:text[-36px] md:text-[48px] text-white text-center sm:whitespace-pre-line mb-[36px] sm:mb-[46px] "
+            >
+              {/**/} Single objects, infinite possibilities{" "}
+              <span className="text-gray-500 block">
+                Visualise connections using graph &amp; <br /> database views
+              </span>
+            </h3>
+            {/* button start */}
+            <div className="flex justify-center mb-[36px] sm:mb-[60px]">
+              <ul className=" relative flex justify-center text-[18px] font-[500] md:text-[22px] ">
+                <li>
+                  <button
+                    className={` ${
+                      activeBut === "table"
+                        ? " border-b-[0.5px]  border-gray-300 text-white"
+                        : "text-gray-400"
+                    }  pb-[10px] w-[95px] sm:w-[136px] transition-colors hover:text-white `}
+                    onClick={() => {
+                      setActiveBut("table");
+                    }}
+                  >
+                    Table
+                  </button>
+                </li>
+                <li>
+                  <button
+                    className={` ${
+                      activeBut === "kanban"
+                        ? " border-b-[0.5px]  border-gray-300 text-white"
+                        : "text-gray-400"
+                    } pb-[10] w-[95px] sm:w-[136px] transition-colors hover:text-white `}
+                    onClick={() => {
+                      setActiveBut("kanban");
+                    }}
+                  >
+                    Kanban
+                  </button>
+                </li>
+                <li>
+                  <button
+                    className={` ${
+                      activeBut === "gallary"
+                        ? " border-b-[0.5px]  border-gray-300 text-white"
+                        : "text-gray-400"
+                    } pb-[10px] w-[95px] sm:w-[136px] transition-colors hover:text-white `}
+                    onClick={() => {
+                      setActiveBut("gallary");
+                    }}
+                  >
+                    Gallery
+                  </button>
+                </li>
+              </ul>
+            </div>
+            {/* button end  */}
+            {
+              {
+                table: (<Table/>),
+                kanban: (<Kanban/>),
+                gallary: (<Gallary/>),
+              }[activeBut]
+
+            }
           </div>
         </div>
       </section>
