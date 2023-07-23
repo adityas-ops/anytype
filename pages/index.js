@@ -256,14 +256,10 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className=" bg-white text-black overflow-hidden py-[10px] sm:py-[16px]">
-        <div className="containers relative">
-         {/* gradient start */}
-         <div className=" absolute  right-[-620px] z-[1] top-[500px] bg-gradient-2 h-[512px] w-[1024px]"/>
-           {/* gradient end */}
+      <section className="  text-black overflow-hidden py-[10px] sm:py-[16px]">
+        <div className="containers relative bg-transparent">
           {/* start/ */}
           <div className="flex flex-col z-20 relative  sm:flex-row border-[1px] border-gray-700 ">
-         
             <div className=" md:w-[50.11%] w-full flex items-center justify-center md:border-r-[1px] border-gray-700">
               <h3 className=" font-Inter  text-center text-[4rem] whitespace-pre-line md:text-[5.5rem] lg:text-[7.5rem] md:leading-[100px] leading-[3.5rem]  pt-[94px] md:pt-[5rem] px-[20px] pb-0 md:pb-[5rem] ">
                 Enjoy
@@ -275,7 +271,8 @@ export default function Home() {
                 1
               </div>
               <div className=" font-Inter font-[500] md:text-[48px] text-[28px] leading-[1] text-center mb-[66px] md:mb-[110px]">
-                Protect your thoughts & <br/> data with end-to-end <br/>encryption
+                Protect your thoughts & <br /> data with end-to-end <br />
+                encryption
               </div>
               <div className="flex gap-10 sm:gap-20 md:gap-30 w-full justify-center ">
                 <div className="w-[148px] sm:w-[210px]">
@@ -304,7 +301,7 @@ export default function Home() {
           </div>
           {/* end */}
           {/* start/ */}
-          <div className="flex flex-col z-[100]  sm:flex-row border-[1px] border-t-0 border-gray-700 ">
+          <div className="flex flex-col   sm:flex-row border-[1px] border-t-0 border-gray-700 ">
             <div className=" md:w-[50%] md:order-2 order-1 w-full flex items-center justify-center md:border-l-[1px] border-gray-700">
               <h3 className=" font-Inter text-center text-[4rem] whitespace-pre-line md:text-[5.5rem] lg:text-[7.5rem] md:leading-[100px] leading-[3.5rem]  pt-[94px] md:pt-[5rem] px-[20px] pb-0 md:pb-[5rem] ">
                 Never
@@ -316,7 +313,9 @@ export default function Home() {
                 2
               </div>
               <div className=" font-Inter font-[500] md:text-[48px] text-[28px] leading-[1] text-center mb-[66px] md:mb-[110px]">
-                Nobody can stop you<br/> from accessing your<br/> account
+                Nobody can stop you
+                <br /> from accessing your
+                <br /> account
               </div>
               <div className="flex gap-10 sm:gap-20 md:gap-30 w-full justify-center ">
                 <div className="w-[148px] sm:w-[210px]">
@@ -360,7 +359,8 @@ export default function Home() {
                 3
               </div>
               <div className=" font-Inter font-[500] md:text-[48px] text-[28px] leading-[1] text-center mb-[66px] md:mb-[110px]">
-                Pure transparency — <br/> trust our code, not our<br/> words
+                Pure transparency — <br /> trust our code, not our
+                <br /> words
               </div>
               <div className="flex gap-10 sm:gap-20 md:gap-30 w-full justify-center ">
                 <div className="w-[148px] sm:w-[210px]">
@@ -388,6 +388,237 @@ export default function Home() {
             </div>
           </div>
           {/* end */}
+          {/* gradient start */}
+          <div className=" absolute  right-[-620px] z-[-1] md:top-[500px] top-[640px] bg-gradient-2 md:h-[512px] h-[324px] md:w-[1024px] w-[900px]" />
+          <div className=" absolute  left-[-480px] md:left-[-500px] z-[-1] bottom-[690px] md:bottom-[540px] bg-gradient-3 md:h-[512px] h-[324px] md:w-[1024px] w-[900px]" />
+          <div className=" absolute  right-[-480px] md:right-[-400px] z-[-1] bottom-[-150px] md:bottom-[-250px] bg-gradient-4 md:h-[512px] h-[324px] md:w-[1024px] w-[900px]" />
+          {/* gradient end */}
+        </div>
+      </section>
+      <section className="bg-black font-Inter text-white pt-[96px] md:pt-[172px]">
+        <div className="containers">
+          <h2 className=" px-[10px] sm:mx-0 text-[44px] leading-[1.1] sm:text-[64px] md:text-[120px] text-center mb-[78px]">
+            {/**/} Compose beautifully{" "}
+          </h2>
+        </div>
+        <div className="containers">
+          <div className="sm:grid sm:grid-cols-2 md:grid-cols-3">
+            <div className=" container-inner flex items-center justify-center text-center col-span-2 border-b md:border-[1px] border-gray-800 md:order-1 pb-[42px] sm:pb-[64px] md:pb-0">
+              <h4
+                data-v-dbbcdee0=""
+                className="  text-[28px] leading-[1.2] font-[500] sm:text-[36px] sm:leading-[36px] md:text-[48px] tracking-[-2.4px] md:leading-[48px]"
+              >
+                {/**/} Powerful, no-code creation:{" "}
+                <span className="text-[#666666] block sm:whitespace-pre-line">
+                  Compose anything you can <br /> imagine visually
+                </span>
+              </h4>
+            </div>
+            <div className="pt-[28px] pb-[48px] sm:pt-[40px] sm:pb-[62px] px-[32px] border-[1px] border-t-0 sm:border-r-0 md:border-t  border-gray-800 md:order-0">
+              <h4
+                data-v-dbbcdee0=""
+                className=" text-[18px]   sm:text-[22px] font-[500]  text-center "
+              >
+                {/**/}Block-based editor
+              </h4>
+              <div data-v-dbbcdee0="" className=" mx-auto max-w-[336px] ">
+                {/**/}
+                <img
+                  src="/images/home/editor.svg"
+                  className="mt-[26px] sm:mt-[16px]"
+                />
+              </div>
+            </div>
+            {/* start */}
+            <div className="pt-[28px] pb-[48px] sm:pt-[40px] sm:pb-[62px] px-[32px] border border-t-0 md:border-r-0 border-gray-800 md:order-2">
+              <h4 className=" text-[18px] font[-500] sm:text-[22px] text-center ">
+                {/**/}Data-bases
+              </h4>
+              <div className="grid grid-cols-2 gap-8 mt-[26px] sm:mt-[50px] mx-auto max-w-[336px]">
+                <div className="">
+                  {/**/}
+                  <img src="/images/home/kanban/base1.svg" />
+                </div>
+                <div>
+                  {/**/}
+                  <img src="/images/home/kanban/base2.svg" />
+                </div>
+                <div>
+                  {/**/}
+                  <img src="/images/home/kanban/base3.svg" />
+                </div>
+                <div>
+                  {/**/}
+                  <img src="/images/home/kanban/base4.svg" />
+                </div>
+              </div>
+            </div>
+
+            {/* end */}
+            {/* start */}
+            <div className="pt-[28px] pb-[48px] sm:pt-[40px] sm:pb-[62px] px-[32px] border border-t-0 sm:border-r-0 border-gray-800 md:order-2">
+              <h4 className=" text-[18px] font-[500] sm:text-[22px] text-center">
+                Templates
+              </h4>
+              <div className="max-w-[380px] mx-auto">
+                <div className="-mr-[12px] -mb-[12px] md:-mr-[16px] md:-mb-[16px] mt-[26px] sm:mt-[50px]">
+                  <div className="flex justify-center">
+                    <div
+                      data-v-dbbcdee0=""
+                      className=" mr-[12px] mb-[12px] md:mr-[16px] md:mb-[16px]"
+                      style={{ width: "95.61%", maxWidth: "99px" }}
+                    >
+                      {/**/}
+                      <img
+                        src="/images/home/templates/1.svg"
+                        className="w-full"
+                      />
+                    </div>
+                    <div
+                      className=" mr-[12px] mb-[12px] md:mr-[16px] md:mb-[16px] "
+                      style={{
+                        width: "30.5263%",
+                        maxWidth: "116px",
+                      }}
+                    >
+                      {/**/}
+                      <img
+                        src="/images/home/templates/2.svg"
+                        className="w-full"
+                      />
+                    </div>
+                    <div
+                      data-v-dbbcdee0=""
+                      className="mr-[12px] mb-[12px] md:mr-[16px] md:mb-[16px]"
+                      style={{
+                        width: "26.5789%",
+                        maxWidth: "101px",
+                      }}
+                    >
+                      {/**/}
+                      <img
+                        src="/images/home/templates/3.svg"
+                        className="w-full"
+                      />
+                    </div>
+                  </div>
+                  <div className="flex justify-center">
+                    <div
+                      data-v-dbbcdee0=""
+                      className="mr-[12px] mb-[12px] md:mr-[16px] md:mb-[16px]"
+                      style={{ width: "25.5263%", maxWidth: "97px" }}
+                    >
+                      {/**/}
+                      <img
+                        src="/images/home/templates/4.svg"
+                        className="w-full"
+                      />
+                    </div>
+                    <div
+                      data-v-dbbcdee0=""
+                      className="mr-[12px] mb-[12px] md:mr-[16px] md:mb-[16px]"
+                      style={{
+                        width: "32.6316%",
+                        maxWidth: "124px",
+                      }}
+                    >
+                      {/**/}
+                      <img
+                        src="/images/home/templates/5.svg"
+                        className="w-full"
+                      />
+                    </div>
+                  </div>
+                  <div className="flex justify-center">
+                    <div
+                      className="mr-[12px] mb-[12px] md:mr-[16px] md:mb-[16px]"
+                      style={{ width: "23.4211%", maxWidth: "89px" }}
+                    >
+                      {/**/}
+                      <img
+                        src="/images/home/templates/6.svg"
+                        className="w-full"
+                      />
+                    </div>
+                    <div
+                      data-v-dbbcdee0=""
+                      className="mr-[12px] mb-[12px] md:mr-[16px] md:mb-[16px]"
+                      style={{
+                        width: "36.0526%",
+                        maxWidth: "137px",
+                      }}
+                    >
+                      {/**/}
+                      <img
+                        src="/images/home/templates/7.svg"
+                        className="w-full"
+                      />
+                    </div>
+                    <div
+                      data-v-dbbcdee0=""
+                      className="mr-[12px] mb-[12px] md:mr-[16px] md:mb-[16px]"
+                      style={{
+                        width: "25.2632%",
+                        maxWidth: "96px",
+                      }}
+                    >
+                      {/**/}
+                      <img
+                        src="/images/home/templates/8.svg"
+                        className="w-full"
+                      />
+                    </div>
+                  </div>
+                  <div className="flex justify-center">
+                    <div
+                      data-v-dbbcdee0=""
+                      className="mr-[12px] mb-[12px] md:mr-[16px] md:mb-[16px]"
+                      style={{ width: "36.8421%", maxWidth: "140px" }}
+                    >
+                      {/**/}
+                      <img
+                        src="/images/home/templates/9.svg"
+                        className="w-full"
+                      />
+                    </div>
+                    <div
+                      data-v-dbbcdee0=""
+                      className="mr-[12px] mb-[12px] md:mr-[16px] md:mb-[16px]"
+                      style={{
+                        width: "28.1579%",
+                        maxWidth: "107px",
+                      }}
+                    >
+                      {/**/}
+                      <img
+                        src="/images/home/templates/10.svg"
+                        className="w-full"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            {/* end */}
+            {/* start  */}
+            <div className="pt-[28px] pb-[48px] sm:pt-[40px] sm:pb-[62px] px-[32px] border border-t-0 border-gray-800 md:order-2">
+              <h4
+                data-v-dbbcdee0=""
+                className=" text-[18px] font-[500] sm:text-[22px] text-center"
+              >
+                {/**/}Widgets
+              </h4>
+              <div
+                data-v-dbbcdee0=""
+                className=" mt-[26px] sm:mt-[50px] mx-auto max-w-[336px]"
+              >
+                {/**/}
+                <img src="/images/home/galary/1.png" className="w-full" />
+              </div>
+            </div>
+
+            {/* end */}
+          </div>
         </div>
       </section>
     </>

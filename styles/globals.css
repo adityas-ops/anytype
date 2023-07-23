@@ -2,11 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
 @font-face {
   font-family: "Riccione-Serial";
-  src: url("/fontFamily/Riccione-Serial-Regular/Riccione-Serial Regular.ttf") format("truetype");
+  src: url("/fontFamily/Riccione-Serial-Regular/Riccione-Serial Regular.ttf")
+    format("truetype");
   /* You can add more font formats like woff, woff2, etc. for better browser support */
 }
 
@@ -16,20 +15,25 @@
   /* You can add more font formats like woff, woff2, etc. for better browser support */
 }
 
-
 :root {
-
 }
 
-.active{
-  text-decoration:  underline;
-  
+.active {
+  text-decoration: underline;
 }
 
-.containers{
+.containers {
   max-width: 1680px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 1rem;
   padding-right: 1rem;
 }
+
+.container-inner {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+
+
