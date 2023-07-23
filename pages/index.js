@@ -92,7 +92,7 @@ const cardData2 = [
 
 export default function Home() {
   const [activeBut, setActiveBut] = useState("table");
-  const [compo,setCompo] =  useState(1)
+  const [compo, setCompo] = useState(1);
   return (
     <>
       <section className="w-full mt-[80px] bg-white z-0 relative overflow-hidden bg-gradient-1">
@@ -686,13 +686,92 @@ export default function Home() {
             {/* button end  */}
             {
               {
-                table: (<Table/>),
-                kanban: (<Kanban/>),
-                gallary: (<Gallary/>),
+                table: <Table />,
+                kanban: <Kanban />,
+                gallary: <Gallary />,
               }[activeBut]
-
             }
           </div>
+        </div>
+      </section>
+      <section className="relative   overflow-hidden bg-transparent text-black">
+        <div className=" bg-gradient-5 z-[-1] bottom-0 absolute right-0 h-[600px]  md:h-[1200px] w-[600px] " />
+        <div className="container z-10 py-[94px] md:py-[160px]">
+          <h3 className=" text-center mb-[86px] text-[64px] sm:text-[88px] leading-[1]">
+            Think fast
+          </h3>
+          {/* start */}
+          <div className="md:flex justify-center">
+            <div
+              data-v-dbbcdee0=""
+              className="viewport-element-fade-in viewport-element mb-[44px] sm:mb-[70px] last:mb-0 min-w-[320px] md:mx-[32px] lg:mx-[64px] is-visible">
+              {/**/}
+              <div className="text-center">
+                <div className="mb-[18px] sm:mb-[22px] flex justify-center items-end">
+                  <div className="mx-[8px] sm:mx-[10px] min-h-[48px] sm:min-h-[64px]">
+                    <img
+                      src="/images/home/home.svg"
+                      className="max-w-[64px] sm:max-w-[96px]"
+                    />
+                  </div>
+                </div>
+                <h5 className="text-[28px] font-[500] sm:text-[36px] mb-[10px] sm:mb-[14px]">
+                  Off-line speed
+                </h5>
+                <div className="text-[16px] font-[300] sm:text-[18px] whitespace-pre-line">
+                  Hi-speed as it works locally. No server — no lag
+                </div>
+              </div>
+            </div>
+            <div
+              data-v-dbbcdee0=""
+              className="viewport-element-fade-in viewport-element mb-[44px] sm:mb-[70px] last:mb-0 min-w-[320px] md:mx-[32px] lg:mx-[64px] is-visible"
+              style={{ transitionDelay: "0.05s" }}
+            >
+              {/**/}
+              <div className="text-center">
+                <div className="mb-[18px] sm:mb-[22px] flex justify-center items-end">
+                  <div className="mx-[8px] sm:mx-[10px] min-h-[48px] sm:min-h-[64px]">
+                    <img
+                      src="/images/home/energy.svg"
+                      className="max-w-[64px] sm:max-w-[196px]"
+                    />
+                  </div>
+                </div>
+                <h5 className="text-[28px] font-[500] sm:text-[36px] mb-[10px] sm:mb-[14px]">
+                  Fast sync
+                </h5>
+                <div className="text-[16px] font-[300] sm:text-[18px] whitespace-pre-line">
+                  Syncs in a peer-to-peer way in local networks
+                </div>
+              </div>
+            </div>
+            <div
+              data-v-dbbcdee0=""
+              className="viewport-element-fade-in viewport-element mb-[44px] sm:mb-[70px] last:mb-0 min-w-[320px] md:mx-[32px] lg:mx-[64px] is-visible"
+              style={{ transitionDelay: "0.1s" }}
+            >
+              {/**/}
+              <div className="text-center">
+                <div className="mb-[18px] sm:mb-[22px] flex justify-center items-end">
+                  <div className="mx-[8px] sm:mx-[10px] min-h-[48px] sm:min-h-[64px]">
+                    <img
+                      src="/images/home/stores.svg"
+                      className="max-w-[73px] sm:max-w-[110px]"
+                    />
+                  </div>
+                </div>
+                <h5 className="text-[28px] font-[500] sm:text-[36px] mb-[10px] sm:mb-[14px]">
+                  Native on mobile
+                </h5>
+                <div className="text-[16px] font-[300] sm:text-[18px] whitespace-pre-line">
+                  Natural touch and scroll experience, on both iOS and Android
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* end */}
         </div>
       </section>
     </>
