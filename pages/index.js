@@ -15,42 +15,76 @@ const data = [
   },
 ];
 
-
 const cardData = [
   {
-    title:"Daily journal",
-    src:"/images/home/Daily-journals.jpg"
+    title: "Daily journal",
+    src: "/images/home/Daily-journals.jpg",
   },
   {
-    title:"Strategic writing",
-    src:"/images/home/Strategic-thinking.jpg"
+    title: "Strategic writing",
+    src: "/images/home/Strategic-thinking.jpg",
   },
   {
-    title:"Knowledge base",
-    src:"/images/home/Knowledge-base.jpg"
+    title: "Knowledge base",
+    src: "/images/home/Knowledge-base.jpg",
   },
   {
-    title:"Trip planner",
-    src:"/images/home/trip-planner.jpg"
+    title: "Trip planner",
+    src: "/images/home/trip-planner.jpg",
   },
   {
-    title:"Study hub",
-    src:"/images/home/Study-Hub.jpg"
+    title: "Study hub",
+    src: "/images/home/Study-Hub.jpg",
   },
   {
-    title:"Recipe book",
-    src:"/images/home/Recipe-book.jpg"
+    title: "Recipe book",
+    src: "/images/home/Recipe-book.jpg",
   },
   {
-    title:"Habit tracker",
-    src:"/images/home/Habit-tracker.jpg"
+    title: "Habit tracker",
+    src: "/images/home/Habit-tracker.jpg",
   },
   {
-    title:"Data vault",
-    src:"/images/home/Vault.jpg"
-  }
-]
+    title: "Data vault",
+    src: "/images/home/Vault.jpg",
+  },
+];
 
+const cardData1 = [
+  {
+    title: "Team wiki",
+  },
+  {
+    title: "Shareable docs",
+  },
+  {
+    title: "Press kit",
+  },
+  {
+    title: "Startup data room",
+  },
+  {
+    title: "Curated lists",
+  },
+  {
+    title: "Personal portfolio",
+  },
+];
+
+const cardData2 = [
+  {
+    title: "Community hub",
+  },
+  {
+    title: "Public Blog",
+  },
+  {
+    title: "Shared graphs",
+  },
+  {
+    title: "Collaborative Projects",
+  },
+];
 
 export default function Home() {
   return (
@@ -163,46 +197,197 @@ export default function Home() {
             </div>
             {/* end */}
             <div className=" flex flex-wrap -mr-[8px] -mb-[8px] sm:-mr-[12px] sm:-mb-[16px]">
-            {
-              cardData.map((item,index)=>{
-                return(
+              {cardData.map((item, index) => {
+                return (
                   <>
-                  <Card title={item.title} src={item.src} key={index}/>
+                    <Card title={item.title} src={item.src} key={index} />
                   </>
-                )
-              }
-              )
-            }
+                );
+              })}
             </div>
           </div>
           {/*  start  */}
           <div className="md2:flex items-start md:px-[48px] mb-[42px] md:mb-[96px] last:mb-0">
-            {/* start  */}
             <div className="flex justify-center text-[#808080] md:mt-[20px] mb-[20px] md:pr-[64px]">
               <div className=" md:min-w-[90px]">
                 {/**/}
                 <span className="md2:block  text-[18px] font-Inter font-[300]  md:text-[22px] md:font-[300] md2:text-14-400 md2:text-[14px] md2:font-[400] md2:uppercase mb-[4px] mr-[4px]">
-                  Released
+                  RELEASE
                 </span>
                 <span className="md2:block text-[18px] md:text-[22px] font-[300]">
-                  Today
+                  3Q 2023
                 </span>
               </div>
             </div>
             {/* end */}
             <div className=" flex flex-wrap -mr-[8px] -mb-[8px] sm:-mr-[12px] sm:-mb-[16px]">
-            {
-              cardData.map((item,index)=>{
-                return(
+              {cardData1.map((item, index) => {
+                return (
                   <>
-                  <Card title={item.title}  key={index}/>
+                    <Card title={item.title} key={index} />
                   </>
-                )
-              }
-              )
-            }
+                );
+              })}
             </div>
           </div>
+          {/* s */}
+          <div className="md2:flex items-start md:px-[48px] mb-[42px] md:mb-[96px] last:mb-0">
+            <div className="flex justify-center text-[#808080] md:mt-[20px] mb-[20px] md:pr-[64px]">
+              <div className=" md:min-w-[90px]">
+                {/**/}
+                <span className="md2:block  text-[18px] font-Inter font-[300]  md:text-[22px] md:font-[300] md2:text-14-400 md2:text-[14px] md2:font-[400] md2:uppercase mb-[4px] mr-[4px]">
+                  RELEASE
+                </span>
+                <span className="md2:block text-[18px] md:text-[22px] font-[300]">
+                  4Q 2024
+                </span>
+              </div>
+            </div>
+            {/* end */}
+            <div className=" flex flex-wrap -mr-[8px] -mb-[8px] sm:-mr-[12px] sm:-mb-[16px] last:ml-1">
+              {cardData2.map((item, index) => {
+                return (
+                  <>
+                    <Card title={item.title} key={index} />
+                  </>
+                );
+              })}
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className=" bg-white text-black overflow-hidden py-[10px] sm:py-[16px]">
+        <div className="containers relative">
+         {/* gradient start */}
+         <div className=" absolute  right-[-620px] z-[1] top-[500px] bg-gradient-2 h-[512px] w-[1024px]"/>
+           {/* gradient end */}
+          {/* start/ */}
+          <div className="flex flex-col z-20 relative  sm:flex-row border-[1px] border-gray-700 ">
+         
+            <div className=" md:w-[50.11%] w-full flex items-center justify-center md:border-r-[1px] border-gray-700">
+              <h3 className=" font-Inter  text-center text-[4rem] whitespace-pre-line md:text-[5.5rem] lg:text-[7.5rem] md:leading-[100px] leading-[3.5rem]  pt-[94px] md:pt-[5rem] px-[20px] pb-0 md:pb-[5rem] ">
+                Enjoy
+                <br /> true <br /> privacy
+              </h3>
+            </div>
+            <div className="md:w-[50%] w-full md:pt-[96px] pt-[62px] md:pb-[106px] pb-[90px] px-[20px] flex flex-col justify-center items-center">
+              <div className="w-[48px] border font-Inter text-[14px] flex items-center justify-center border-black h-[24px] mb-[38px]">
+                1
+              </div>
+              <div className=" font-Inter font-[500] md:text-[48px] text-[28px] leading-[1] text-center mb-[66px] md:mb-[110px]">
+                Protect your thoughts & <br/> data with end-to-end <br/>encryption
+              </div>
+              <div className="flex gap-10 sm:gap-20 md:gap-30 w-full justify-center ">
+                <div className="w-[148px] sm:w-[210px]">
+                  <img
+                    src="/images/home/locker.svg"
+                    alt="as"
+                    className="h-[96px] sm:h-[124px] md:h-[168px] mx-auto mb-[24px] md:mb-[44px]"
+                  />
+                  <div className="text-[1rem] md:text-[18px] font-[300] text-center m-auto sm:whitespace-pre-line">
+                    Local, on-device encryption
+                  </div>
+                </div>
+                <div className="w-[148px] sm:w-[210px]">
+                  <img
+                    src="/images/home/keys.svg"
+                    alt="as"
+                    className="h-[96px] sm:h-[124px] md:h-[168px] mx-auto mb-[24px] md:mb-[44px]"
+                  />
+                  <div className="text-[1rem] md:text-[18px] font-[300] text-center m-auto sm:whitespace-pre-line">
+                    Only you have <br />
+                    encryption keys
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* end */}
+          {/* start/ */}
+          <div className="flex flex-col z-[100]  sm:flex-row border-[1px] border-t-0 border-gray-700 ">
+            <div className=" md:w-[50%] md:order-2 order-1 w-full flex items-center justify-center md:border-l-[1px] border-gray-700">
+              <h3 className=" font-Inter text-center text-[4rem] whitespace-pre-line md:text-[5.5rem] lg:text-[7.5rem] md:leading-[100px] leading-[3.5rem]  pt-[94px] md:pt-[5rem] px-[20px] pb-0 md:pb-[5rem] ">
+                Never
+                <br /> lose <br /> access
+              </h3>
+            </div>
+            <div className="md:w-[50%]  z-[100]  md:order-1 order-2  w-full md:pt-[96px] pt-[62px] md:pb-[106px] pb-[90px] px-[20px] flex flex-col justify-center items-center">
+              <div className="w-[48px] border font-Inter text-[14px] flex items-center justify-center border-black h-[24px] mb-[38px]">
+                2
+              </div>
+              <div className=" font-Inter font-[500] md:text-[48px] text-[28px] leading-[1] text-center mb-[66px] md:mb-[110px]">
+                Nobody can stop you<br/> from accessing your<br/> account
+              </div>
+              <div className="flex gap-10 sm:gap-20 md:gap-30 w-full justify-center ">
+                <div className="w-[148px] sm:w-[210px]">
+                  <img
+                    src="/images/home/offline.svg"
+                    alt="as"
+                    className="h-[96px] sm:h-[124px] md:h-[168px] mx-auto mb-[24px] md:mb-[44px]"
+                  />
+                  <div className="text-[1rem] md:text-[18px] font-[300] text-center m-auto sm:whitespace-pre-line">
+                    Offline account creation: control your keys, own your data
+                  </div>
+                </div>
+                <div className="w-[148px] sm:w-[210px]">
+                  <img
+                    src="/images/home/no-server.svg"
+                    alt="as"
+                    className="h-[96px] sm:h-[124px] md:h-[168px] mx-auto mb-[24px] md:mb-[44px]"
+                  />
+                  <div className="text-[1rem] md:text-[18px] font-[300] text-center m-auto sm:whitespace-pre-line">
+                    No server, no gatekeeper: peer-to-peer sync on local
+                    networks
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* end */}
+          {/* start/ */}
+          <div className="flex flex-col z-50  sm:flex-row border-[1px] border-t-0 border-gray-700 ">
+            <div className=" md:w-[50.11%]  w-full flex items-center justify-center md:border-r-[1px] border-gray-700">
+              <h3 className=" font-Inter text-center text-[4rem] whitespace-pre-line md:text-[5.5rem] lg:text-[7.5rem] md:leading-[100px] leading-[3.5rem]  pt-[94px] md:pt-[5rem] px-[20px] pb-0 md:pb-[5rem] ">
+                Trust,
+                <br />
+                not
+                <br />
+                belief
+              </h3>
+            </div>
+            <div className="md:w-[50%]   w-full md:pt-[96px] pt-[62px] md:pb-[106px] pb-[90px] px-[20px] flex flex-col justify-center items-center">
+              <div className="w-[48px] border font-Inter text-[14px] flex items-center justify-center border-black h-[24px] mb-[38px]">
+                3
+              </div>
+              <div className=" font-Inter font-[500] md:text-[48px] text-[28px] leading-[1] text-center mb-[66px] md:mb-[110px]">
+                Pure transparency — <br/> trust our code, not our<br/> words
+              </div>
+              <div className="flex gap-10 sm:gap-20 md:gap-30 w-full justify-center ">
+                <div className="w-[148px] sm:w-[210px]">
+                  <img
+                    src="/images/home/backup.svg"
+                    alt="as"
+                    className="h-[96px] sm:h-[124px] md:h-[168px] mx-auto mb-[24px] md:mb-[44px]"
+                  />
+                  <div className="text-[1rem] md:text-[18px] font-[300] text-center m-auto sm:whitespace-pre-line">
+                    Locally store your data, self-host your backups where you
+                    please
+                  </div>
+                </div>
+                <div className="w-[148px] sm:w-[210px]">
+                  <img
+                    src="/images/home/build.svg"
+                    alt="as"
+                    className="h-[96px] sm:h-[124px] md:h-[168px] mx-auto mb-[24px] md:mb-[44px]"
+                  />
+                  <div className="text-[1rem] md:text-[18px] font-[300] text-center m-auto sm:whitespace-pre-line">
+                    Open protocols, build apps freely, no permission required
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* end */}
         </div>
       </section>
     </>
