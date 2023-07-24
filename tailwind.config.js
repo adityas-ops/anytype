@@ -19,7 +19,8 @@ module.exports = {
       },
       screens:{
         "md2":"1240px",
-        "md3":"1024px"
+        "md3":"1024px",
+        "lg":"1440px"
       }
     },
   },

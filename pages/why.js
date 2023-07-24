@@ -177,7 +177,7 @@ function why() {
     <div className="flex flex-wrap mb-[18px] sm:mb-[32px] w-full">
     <a
         href="/faq"
-        className=" py-[10px]  border border-t-0  border-gray-600  px-[20px] relative flex items-center justify-center text-center w-1/2 sm:w-[14.28%] text-[18px] font-[300] min-h-[64px] md:min-h-[88px] hover:bg-black"
+        className=" py-[10px]  border border-t-0  border-gray-600  px-[20px] relative flex items-center justify-center text-center w-1/2 sm:w-[14.28%] text-[18px] font-[300] min-h-[64px] md:min-h-[88px] "
       >
         <div
           data-v-dbbcdee0=""
