@@ -13,32 +13,7 @@ function Header() {
               alt="home"
             />
           </div>
-          <div className=" hidden md:block">
-            <Link
-              href="https://www.producthunt.com/products/anytype"
-              target="_blank"
-              rel="nofollow"
-              className="flex font-Inter text-[14px] items-center mr-5 text-red-500"
-            >
-              {/*[*/} Join us for our Product Hunt launch on July 19!{" "}
-              <span
-                className="nuxt-icon icon icon-arrow-right text-[10rem] ml-4"
-                data-v-6aa3f129=""
-              >
-                <svg
-                  viewBox="0 0 12 12"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M5.5 1L10.5 6M10.5 6L5.5 11M10.5 6H0.5"
-                    stroke="currentColor"
-                  />
-                </svg>
-              </span>
-              {/*]*/}
-            </Link>
-          </div>
+          
           <div className=" w-fit whitespace-nowrap h-full flex items-center ">
             <Link
               href="https://download.anytype.io/"
